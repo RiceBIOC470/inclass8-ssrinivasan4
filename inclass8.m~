@@ -1,4 +1,4 @@
-%Inclass assignment 8 - Sanjana Srinivasan
+%Inclass assignment 8
 
 %Using the swalign function
 % A. Create a random DNA sequence of length 100. 
@@ -44,8 +44,4 @@ dnaseq2=strcat(dnaseq1(1:40), randseq(20), dnaseq1(61:end));
 
 %With a higher opening gap penalty, and low extension penalty, the only way
 %it would be "worth it to introduce a gap is if there are a series of gaps
-%occuring together that would later allow for more matches. Looking at the
-%alignment, we see that this is exacty the case. There are two regions of
-%four gap positions each introduced in order to allow for all other
-%positions to match. The total alignment score is lower than in cases where
-%the opening gap penalty is lower.
+%occuring together that would later allow
