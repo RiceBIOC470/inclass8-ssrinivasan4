@@ -1,3 +1,5 @@
+%AW: Looks good. see comment below. 0.95/1.
+
 %Inclass assignment 8 - Sanjana Srinivasan
 
 %Using the swalign function
@@ -6,9 +8,12 @@ dnaseq1=randseq(100);
 % B. Create a second sequence from the first one by changing the middle 20 basepairs (at positions 41-60)
 dnaseq2=strcat(dnaseq1(1:40), randseq(20), dnaseq1(61:end));
 % C. run swalign on the two sequences with the default parameters
+
 [def_score, def_alignment, def_start]=swalign(dnaseq1, dnaseq2);
 % D. run swalign with much higher and lower values of the GapOpen parameter
 % and explain the results. 
+%AW: by default swalign uses the amino acid alphabet. set alphabet to 'nt' for dna sequences. -0.05.
+
 [Dhigh_score, Dhigh_alignment, Dhigh_start]=swalign(dnaseq1, dnaseq2, 'GapOpen', 50);
 [Dlow_score, Dlow_alignment, Dlow_start]=swalign(dnaseq1, dnaseq2, 'GapOpen', 2);
 
